@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aplicación para realizar las operaciones matemáticas básicas</h1>
+    <div class = "calcular">
+        <form action="#" method="post">
+            <p>Escribe el 1:</p><input type="number" name = "numero1" value="{{n1}}"><br>
+            <p>Escribe el 2:</p><input type="number" name = "numero2" value="{{n2}}"><br>
+            <input type="submit" value = "Calcular" id = "calcular"><br>
+            <p id = "resultados"> Resultados <br>
+            {% if n1!= '': %}
+                {{n1}} + {{n2}} = {{suma}}<br>
+                {{n1}} - {{n2}} = {{resta}}<br>
+                {{n1}} / {{n2}} = {{division}}<br>
+                {{n1}} * {{n2}} = {{multiplicacion}}<br>
+                {% endif %}
+            </p>
+        </form>
+    </div>
+</body>
+</html>
